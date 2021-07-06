@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #D9DDFB;
+}
+
+.card-container {
+  position: relative;
+  min-height: 100vh;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+  margin: 0 auto; 
+  color: hsl(229, 23%, 23%);
+}
+
+.card {
+  background-color: #ffffff;
+  text-align: center;
+  width: 500px;
+  padding: 0px 0px 10px 0px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  
+}
+
+.card .bg-box {
+  position: relative;
+  width: 500px;
+  height: 184px;
+}
+
+
+.card .bg-box img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card .victor-box {
+  position: relative;
+  /* position: absolute; */
+  /* top: 50%; */
+  transform: translate(-62%, -42%);
+  left: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+
+.card .victor-box::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  top: -8px;
+  left: -8px;
+  z-index: -1;
+}
+
+.card .victor-box img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+
+.card .name {
+  font-size: 1.25rem;
+  letter-spacing: 1px; 
+  margin-bottom: 0.80rem; 
+  font-weight: 600;
+}
+
+.card-container .card .name span {
+  padding-left: 0.50rem;
+  color: grey;
+  font-weight: 500;
+}
+
+.city {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: grey;
+}
+
+.review {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #D9DDFB;
+  margin-top: 2rem;
+}
+
+.review > div h2 {
+  font-size: 1.50rem;
+}
+
+.review > div h4 {
+  font-size: 0.80rem;
+  letter-spacing: 1px;
+  color: gray;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .card {
+    max-width: 80vw;
+  }
+
+  .card .bg-box {
+    max-width: 80vw;
+  }
+}
+
+
+
+   
